@@ -2,8 +2,6 @@
 
 RESTful API da Santander Dev Week 2024 construída em Java 21 com Spring Boot 3. Uma iniciativa fruto da parceria entre DIO e Santander para a divulgação dos Bootcamps Santander 2024.
 
-Ainda não se inscreveu!? Então corre que ainda da tempo, as inscrições vão até 08/04/2024: [Landing Page do Santander](https://l.dio.me/devweeksantander).
-
 ## Diagrama Arquitetural Simplificado
 
 ```mermaid
