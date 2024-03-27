@@ -35,6 +35,13 @@ class UC ucs;
 class Model,IPort entities;
 ```
 
+## Subindo API para AWS
+- Necessário ter conta na AWS (obviamente)
+- Gerar arquivo .jar referente ao projeto da aplicação da API em si
+- Utilizar o Elastic Beanstalk para subida de aplicações padronizadas (que utilizam Spring, por exemplo)
+- Seguir passo a passo para configurar aplicação na AWS
+- Necessário usuário ter algumas ROLES específicas, referentes ao profile de EC2 (AWSElasticBeanstalkWebTier, AWSElasticBeanstalkWorkerTier, AWSElasticBeanstalkMulticontainerDocker)
+
 ## Estrutura de Diretórios
 
 Sendo assim, a aplicação está organizada seguindo os princípios da [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html), com o objetivo de separar as responsabilidades de maneira clara e promover a independência das camadas. Abaixo está a estrutura de diretórios adotada:
