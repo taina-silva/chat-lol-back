@@ -6,6 +6,7 @@ plugins {
 
 group = "dev.taina"
 version = "0.0.1-SNAPSHOT"
+// versão da API (trocar quando for subir alterações para servidor)
 
 java {
 	sourceCompatibility = JavaVersion.VERSION_21

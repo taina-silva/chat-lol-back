@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/champions")
 public record AskChampionRestController(AskChampionUseCase useCase) {
 
+    // permitir uso da API de forma local
+    // permitir que usuários/clientes de diferentes domínios em relação ao que a API foi publicada
+    // consiga ter acesso a mesma, consumir, sem restrições de segurança
+    // não recomendado em termos de segurança
+    // colocada para fins didáticos do curso
+    @CrossOrigin
     @PostMapping("/{championId}/ask")
     public AskChampionResponse askChampion(@PathVariable Long championId, @RequestBody AskChampionRequest request) {
         String answer = useCase().askChampion(championId, request.question());
